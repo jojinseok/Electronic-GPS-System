@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="24dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
+
+            <TextView
+                android:id="@+id/daily_first_complete"
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:text="일일 1차 접종 완료"
+                android:textColor="#9C27B0"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/daily_first_complete_API"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:ems="10"
+                android:text="41,823,166명"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/daily_second_complete"
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:layout_marginBottom="5dp"
+                android:text="일일 2차 접종 완료"
+                android:textColor="#9C27B0"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/daily_second_complete_API"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:ems="10"
+                android:text="39,845,393명"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/daily_third_complete"
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:layout_marginBottom="5dp"
+                android:text="일일 3차 접종 완료"
+                android:textColor="#9C27B0"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/daily_third_complete_API"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:ems="10"
+                android:text="39,845,393명"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/Accumulated_fisrt_complete"
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:text="누적 1차 접종 완료"
+                android:layout_marginBottom="5dp"
+                android:textColor="#9C27B0"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/Accumulated_first_complete_API"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:ems="10"
+                android:text="39,845,393명"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/Accumulated_second_complete"
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:layout_marginBottom="5dp"
+                android:text="누적 2차 접종 완료"
+                android:textColor="#9C27B0"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/Accumulated_second_complete_API"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:ems="10"
+                android:text="39,845,393명"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/Accumulated_third_complete"
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:layout_marginBottom="5dp"
+                android:text="누적 3차 접종 완료"
+                android:textColor="#9C27B0"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/Accumulated_third_complete_API"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:ems="10"
+                android:text="39,845,393명"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/Vaccine_type_button"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="#8B673AB7"
+                    android:text="백신\n종류"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/Vaccine_side_effect"
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="#8B673AB7"
+                    android:text="백신\n부작용"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#673AB7"
+        android:textColor="@color/white"
+        app:itemIconTint="#FFFFFF"
+        app:itemTextColor="#FFFFFF"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_menu"
+        app:itemIconSize="30dp"
+        tools:ignore="MissingConstraints" />
+</RelativeLayout>

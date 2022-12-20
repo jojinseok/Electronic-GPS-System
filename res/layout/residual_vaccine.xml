@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/residual1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="29dp"
+                android:text="김호수 소아과: 모더나 잔여 백신\n 10개"
+                android:textColor="#673AB7"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/residual2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:text="정혜정 소아과: 화이자 잔여 백신\n 13개"
+                android:textColor="#673AB7"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/residual3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:text="고려대학교 안암병원: 아스트라제네카 잔여 백신\n 25개"
+                android:textColor="#673AB7"
+                android:textSize="20dp" />
+        </LinearLayout>
+    </FrameLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#673AB7"
+        android:textColor="@color/white"
+        app:itemIconTint="#FFFFFF"
+        app:itemTextColor="#FFFFFF"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_menu"
+        app:itemIconSize="30dp"
+        tools:ignore="MissingConstraints" />
+</RelativeLayout>

@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/map"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/Gangwon_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00ff0000"
+                android:text="강원"
+                android:textColor="#000000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.724"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.102" />
+
+            <Button
+                android:id="@+id/Chungcheongbuk_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00ff0000"
+                android:text="충북"
+                android:textColor="#000000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.563"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.284" />
+
+            <Button
+                android:id="@+id/Daejeon_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00ff0000"
+                android:text="대전"
+                android:textColor="#000000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.365"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.408" />
+
+            <Button
+                android:id="@+id/Daegu_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00ff0000"
+                android:text="대구"
+                android:textColor="#000000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.764"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.458" />
+
+            <Button
+                android:id="@+id/Gyeongsangbuk_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00ff0000"
+                android:text="경북"
+                android:textColor="#000000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.808"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.37" />
+
+            <Button
+                android:id="@+id/Ulsan_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00ff0000"
+                android:text="울산"
+                android:textColor="#000000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.919"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.528" />
+
+            <Button
+                android:id="@+id/Gyeongsangnam_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00ff0000"
+                android:text="경남"
+                android:textColor="#000000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.637"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.569" />
+
+            <Button
+                android:id="@+id/Busan_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00ff0000"
+                android:text="부산"
+                android:textColor="#000000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.848"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.598" />
+
+            <Button
+                android:id="@+id/Gwangju_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00ff0000"
+                android:text="광주"
+                android:textColor="#000000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.291"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.598" />
+
+            <Button
+                android:id="@+id/Jeollanam_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00ff0000"
+                android:text="전남"
+                android:textColor="#000000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.291"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.669" />
+
+            <Button
+                android:id="@+id/Jeju_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00ff0000"
+                android:text="제주"
+                android:textColor="#000000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.219"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.84" />
+
+            <Button
+                android:id="@+id/Seoul_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00ff0000"
+                android:text="서울"
+                android:textColor="#000000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.39"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.188" />
+
+            <Button
+                android:id="@+id/Gyeonggi_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00ff0000"
+                android:text="경기"
+                android:textColor="#000000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.365"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.102" />
+
+            <Button
+                android:id="@+id/Incheon_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00ff0000"
+                android:text="인천"
+                android:textColor="#000000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.092"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.144" />
+
+            <Button
+                android:id="@+id/Sejong_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00ff0000"
+                android:text="세종"
+                android:textColor="#000000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.492"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.354" />
+
+            <Button
+                android:id="@+id/Chungcheongnam_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00ff0000"
+                android:text="충남"
+                android:textColor="#000000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.25"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.338" />
+
+            <Button
+                android:id="@+id/Jeollabuk_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00ff0000"
+                android:text="전북"
+                android:textColor="#000000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.343"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.499" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#673AB7"
+        android:textColor="@color/white"
+        app:itemIconTint="#FFFFFF"
+        app:itemTextColor="#FFFFFF"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_menu"
+        app:itemIconSize="30dp"
+        tools:ignore="MissingConstraints" />
+
+</RelativeLayout>

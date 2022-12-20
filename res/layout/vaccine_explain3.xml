@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/AstraZeneca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="아스트라제네카"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/AstraZeneca_explain"
+                android:layout_width="385dp"
+                android:layout_height="359dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="100dp"
+                android:text="접종 횟수:(간격)2회\n8-12주(*허가는 4-12주)보관2∼8℃(6개월)\n
+플랫폼: 바이러스 벡터 백신\n
+백신명: 한국아스트라제네카코비드-19백신 \n
+연령:  18세 이상\n
+구성: 다회 투여용 바이알\n
+접종량 및 방법: 0.5㎖, 근육주사 \n
+유통: 2℃∼8℃(6개월)\n
+개봉 후 저장 실온(30℃이하) 6시간\n"
+                android:textSize="20sp"
+                android:visibility="visible" />
+        </LinearLayout>
+    </FrameLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#673AB7"
+        android:textColor="@color/white"
+        app:itemIconTint="#FFFFFF"
+        app:itemTextColor="#FFFFFF"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_menu"
+        app:itemIconSize="30dp"
+        tools:ignore="MissingConstraints" />
+</RelativeLayout>

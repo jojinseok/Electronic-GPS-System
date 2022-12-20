@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="24dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
+
+            <Button
+                android:id="@+id/Pfizer_Button"
+                android:layout_width="330dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="20dp"
+                android:background="#8B673AB7"
+                android:text="화이자"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/Moderna_button"
+                android:layout_width="330dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:background="#8B673AB7"
+                android:text="모더나"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/Janssen_button"
+                android:layout_width="330dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:background="#8B673AB7"
+                android:text="얀센"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/Astrazeneca_button"
+                android:layout_width="330dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:background="#8B673AB7"
+                android:text="아스트라제네카"
+                android:textSize="24sp" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#673AB7"
+        android:textColor="@color/white"
+        app:itemIconTint="#FFFFFF"
+        app:itemTextColor="#FFFFFF"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_menu"
+        app:itemIconSize="30dp"
+        tools:ignore="MissingConstraints" />
+
+
+</RelativeLayout>

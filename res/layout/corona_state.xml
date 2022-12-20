@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="24dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="280dp">
+
+                <TableRow
+                    android:layout_width="80dp"
+                    android:layout_height="40dp">
+
+                    <TextView
+                        android:id="@+id/Accumulated_confirmed"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="누적 확진자"
+                        android:textColor="#673AB7"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/Accumulated_exam"
+                        android:layout_width="168dp"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="누적 검사자"
+                        android:textColor="#673AB7"
+                        android:textSize="20sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/Accumulated_confirmed_API"
+                        android:layout_width="100dp"
+                        android:layout_height="90dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:ems="10"
+                        android:text="누적\n확진자 수\n390,719"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/Accumulated_exam_API"
+                        android:layout_width="150dp"
+                        android:layout_height="90dp"
+                        android:layout_marginBottom="5dp"
+                        android:ems="10"
+                        android:text="누적\n검사자 수\n356,615"
+                        android:textSize="24sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/daily_confirmed"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="일일 확진자"
+                        android:textColor="#9C27B0"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/daily_exam"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="일일 검사자"
+                        android:textColor="#9C27B0"
+                        android:textSize="20sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="100dp"
+                    android:layout_height="17dp">
+
+                    <TextView
+                        android:id="@+id/daily_confirmed_API"
+                        android:layout_width="170dp"
+                        android:layout_height="90dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:ems="10"
+                        android:text="일일\n확진자 수\n2,368"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/daily_exam_API"
+                        android:layout_width="170dp"
+                        android:layout_height="90dp"
+                        android:layout_marginBottom="5dp"
+                        android:ems="10"
+                        android:text="일일\n검사자 수\n1,601"
+                        android:textSize="24sp" />
+
+
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="310dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/Accumulated_isolation"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="누적 격리 해제자"
+                        android:textColor="#9C27B0"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/Accumulated_dead"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="누적 사망자"
+                        android:textColor="#9C27B0"
+                        android:textSize="20sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/Accumulated_isolation_API"
+                        android:layout_width="170dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:ems="10"
+                        android:text="누적\n격리 해제자 수\n1,356,615"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/Accumulated_dead_API"
+                        android:layout_width="170dp"
+                        android:layout_height="90dp"
+                        android:layout_marginBottom="5dp"
+                        android:ems="10"
+                        android:text="누적\n사망자 수\n3,051"
+                        android:textSize="24sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/daily_isolation"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="일일 격리 해제자"
+                        android:textColor="#9C27B0"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/daily_dead"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="일일 사망자"
+                        android:textColor="#9C27B0"
+                        android:textSize="20sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/daily_isolation_API"
+                        android:layout_width="170dp"
+                        android:layout_height="90dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:ems="10"
+                        android:text="일일\n격리 해제자 수\n5,601"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/daily_dead_API"
+                        android:layout_width="170dp"
+                        android:layout_height="90dp"
+                        android:layout_marginBottom="5dp"
+                        android:ems="10"
+                        android:text="일일\n사망자 수\n18"
+                        android:textSize="24sp" />
+                </TableRow>
+            </TableLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#673AB7"
+        android:textColor="@color/white"
+        app:itemIconTint="#FFFFFF"
+        app:itemTextColor="#FFFFFF"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_menu"
+        app:itemIconSize="30dp"
+        tools:ignore="MissingConstraints" />
+
+</RelativeLayout>

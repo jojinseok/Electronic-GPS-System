@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="24dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/cumulative_influx"
+                    android:layout_width="168dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="누적 유입자 "
+                    android:textColor="@color/purple_500"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/first_doses"
+                    android:layout_width="168dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_gravity="left"
+                    android:text="1차 접종자 수"
+                    android:textColor="#673AB7"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/cumulative_influx_count"
+                    android:layout_width="168dp"
+                    android:layout_height="130dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="누적 유입자수 :\n 1000명"
+                    android:textColorHighlight="#2196F3"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/count1"
+                    android:layout_width="168dp"
+                    android:layout_height="130dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="누적 완치자  수\n 400명"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/daily_influx"
+                    android:layout_width="168dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="일일 유입자"
+                    android:textColor="#673AB7"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/two_doses"
+                    android:layout_width="168dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="2차 접종자"
+                    android:textColor="#673AB7"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/daily_influx_count"
+                    android:layout_width="168dp"
+                    android:layout_height="130dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="일일 유입자 수\n 300명"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/daily_healer"
+                    android:layout_width="168dp"
+                    android:layout_height="130dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="일일 완치자 수\n350명"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#673AB7"
+        android:textColor="@color/white"
+        app:itemIconTint="#FFFFFF"
+        app:itemTextColor="#FFFFFF"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_menu"
+        app:itemIconSize="30dp"
+        tools:ignore="MissingConstraints" />
+
+</RelativeLayout>
